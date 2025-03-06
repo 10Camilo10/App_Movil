@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Flow play</string>
     <string name="my_name">Camilo Mora Villa</string>
+    <string name="sent">Enviar</string>
     <string name="register">Regístrate</string>
     <string name="start">Comienza</string>
     <string name="get_into">Ingresa</string>
+    <string name="edit">Editar</string>
     <string name="get_password">Recupera tu contraseña</string>
     <string name="no_account">No tienes cuenta?</string>
+    <string name="already_account">Ya tengo Cuenta</string>
     <string name="home_sentence">Inicia una nueva aventura con FlowPlay y descubre una nueva forma de ver el mundo</string>
     <string name="login_sentence">La aventura está por iniciar, por favor inicia sesión</string>
     <string name="enter_google">Ingresa con google</string>
+    <string name="getPassword_sentence">Te enviaremos un correo para poder recuperar tu contraseña</string>
+    <string name="register_sentence">Completa el formulario para iniciar con la aventura</string>
+    <string name="conditions">Aceptar Terminos Y Condiciones</string>
 </resources>
