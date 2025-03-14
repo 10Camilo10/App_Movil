@@ -14,14 +14,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
-public class ProfileActivity extends AppCompatActivity {
+public class CentralActivity extends AppCompatActivity {
     private ImageView imageViewBack;
     private EditText editTextName;
     private EditText editTextLastname;
     private EditText editTextEmail;
     private EditText editTextPhone;
     private Button buttonEdit;
-    private Button buttonActivity;
     private SharedPreferences sharedPreferences;
 
     @SuppressLint("MissingSuperCall")
@@ -38,7 +37,6 @@ public class ProfileActivity extends AppCompatActivity {
         editTextEmail = findViewById(R.id.etemail_Profile);
         editTextPhone = findViewById(R.id.etcelular_Profile);
         buttonEdit = findViewById(R.id.btnEdit_Profile);
-        buttonActivity = findViewById(R.id.btnActivity_Profile);
 
         sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
 
@@ -64,13 +62,6 @@ public class ProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             Log.d("ProfileActivity", "onClick: Redireccionando a LoginActivity");
-            finish();
-        });
-
-        buttonActivity.setOnClickListener(v -> {
-            Intent intent = new Intent(this, CentralActivity.class);
-            startActivity(intent);
-            Log.d("ProfileActivity", "onClick: Redireccionando a CentralActivity");
             finish();
         });
 

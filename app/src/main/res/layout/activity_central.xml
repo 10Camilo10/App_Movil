@@ -28,14 +28,13 @@
             android:layout_width="wrap_content"
             android:layout_height="140dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/ic_profile"/>
+            app:srcCompat="@drawable/logo_app"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_user"
-            android:hint="Nombre"
+            android:hint="Tipo Deporte"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -44,7 +43,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etnombre_Profile"
+                android:id="@+id/etDeporte_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
@@ -57,8 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_user"
-            android:hint="Apellidos"
+            android:hint="Tiempo Empleado"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -67,7 +65,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etapellido_Profile"
+                android:id="@+id/etTiempo_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
@@ -80,8 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_email"
-            android:hint="Email"
+            android:hint="Distancia Recorrida"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -90,7 +87,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etemail_Profile"
+                android:id="@+id/etDistancia_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -103,8 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_phone"
-            android:hint="Celular"
+            android:hint="Frecuencia Cardiaca Promedio"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -113,7 +109,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etcelular_Profile"
+                android:id="@+id/etfrecuencia_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
@@ -122,32 +118,33 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnEdit_Profile"
-            android:layout_width="225dp"
-            android:layout_height="72dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:width="200dp"
-            android:gravity="center"
-            android:text="@string/edit"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:icon="@drawable/ic_edit"
-            app:iconGravity="textStart"></com.google.android.material.button.MaterialButton>
+        <TextView
+            android:id="@+id/tvEstadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estadisticas"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:layout_marginTop="30dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnActivity_Profile"
-            android:layout_width="225dp"
-            android:layout_height="72dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:width="200dp"
-            android:gravity="center"
-            android:text="@string/activity"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:iconGravity="textStart"></com.google.android.material.button.MaterialButton>
+        <TextView
+            android:id="@+id/tvVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Velocidad:"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/etVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

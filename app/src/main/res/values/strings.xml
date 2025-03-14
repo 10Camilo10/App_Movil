@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flow play</string>
+    <string name="app_name">GoodPoint</string>
     <string name="my_name">Camilo Mora Villa</string>
     <string name="sent">Enviar</string>
     <string name="register">Regístrate</string>
@@ -15,4 +15,5 @@
     <string name="getPassword_sentence">Te enviaremos un correo para poder recuperar tu contraseña</string>
     <string name="register_sentence">Completa el formulario para iniciar con la aventura</string>
     <string name="conditions">Aceptar Terminos Y Condiciones</string>
+    <string name="activity">Principal</string>
 </resources>
